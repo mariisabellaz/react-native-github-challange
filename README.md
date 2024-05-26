@@ -46,63 +46,43 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
+## Step 3: Modifying your App
 
+Now that you have successfully run the app, let's modify it.
 
+1. Open `App.tsx` in your text editor of choice and edit some lines.
+2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
+   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
+## Congratulations! :tada:
+
+You've successfully run and modified your React Native App. :partying_face:
+
+### Now what?
+
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
 ## Project Structure
-
-```plaintext
-react-native-github-challange
-├── __mocks__ : All tests here (components, presentation, reducers etc)
-├── __tests__
-├── android
-├── ios
-├── jest
-├── node_modules
-├── src
-│   ├── @types
-│   ├── assets
-│   │   ├── animation
-│   │   ├── fonts
-│   │   ├── fonts
-│   │   └── svg
-│   ├── components
-│   │   ├── atoms
-│   │   ├── molecules
-│   │   └── organisms
-│   ├── contexts
-│   │   ├── models
-│   │   └── context.tsx
-│   ├── hooks
-│   ├── routes
-│   ├── screens
-│   │   ├── AddUser
-│   │   ├── Intro
-│   │   ├── Login
-│   │   ├── Owners
-│   │   ├── Repositories
-│   │   └── Splash
-│   ├── services
-│   ├── theme
-│   │   ├── colors.ts
-│   │   ├── radius.ts
-│   │   ├── spacing.ts
-│   │   └── typography.ts
-│   └── utils
-│       ├── config
-│       └── tagUtils.tsx
-├── .eslintrc.js
-├── .prettierrc
-├── App.js
-├── babel.config.json
-├── metro.config.json
-├── package.json
-├── react-native.config.js
-├── README.md
-└── tsconfig.json
-```
+📂__tests__: All tests here (components, presentation, reducers etc)
+📂__mocks__: All mock tests here
+📂android: All configuration and code android native
+📂ios: All configuration and code ios native
+📦src
+┣ 📂assets: All assets here (jpg, png, svg etc)
+┣ 📂core: Components that are used in multiple places of the application
+┣ 📂helpers: Application helpers like sanitize, format strings and params, array methods etc.
+┃ ┣ 📂hooks: All custom hooks created to shared logic to application
+┃ ┣ 📂constants: Constants all texts and dictionaries that cannot be put into locales folder
+┃ ┣ Functions: Functions, mocks, schemas and masks
+┣ 📂routes: Routes Privates and Publics configurations
+┣ 📂screens: Containers components (responsible for handling business rules for presentations)
+┣ 📂services: Axios API services
+┣ 📂store: Redux store configurations
+┃ ┣ 📂sagas: All redux-sagas
+┃ ┣ 📂slices: All redux-slices
+┣ 📂theme: themes that are used in multiple places of the application.
 
 ## Libraries
 
