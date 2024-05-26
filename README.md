@@ -1,5 +1,5 @@
 <p align="center">
-  <div style="padding:177.78% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/950474115?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Simulator Screen Recording"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  https://github.com/mariisabellaz/react-native-github-challange/assets/67912287/0de9c974-f841-4b01-b4fc-75427a811007
 </p>
 
 
