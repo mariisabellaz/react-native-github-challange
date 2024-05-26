@@ -3,6 +3,11 @@
   "compilerOptions": {
     "strict": true,
     "baseUrl": "./",
+    "types": [
+      "jest",
+      "styled-components-react-native",
+      "@testing-library/jest-native"
+    ],
     "paths": {
       "@mocks/*": [
         "src/mocks/*"
@@ -37,6 +42,6 @@
       "@theme/*": [
         "./src/theme/*"
       ]
-    }
+    },
   }
 }
