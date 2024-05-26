@@ -64,16 +64,55 @@ You've successfully run and modified your React Native App. :partying_face:
 - If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
 - If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
 
-# Troubleshooting
+## Project Structure
+📂__tests__: All tests here (components, presentation, reducers etc)
+📂__mocks__: All mock tests here
+📂android: All configuration and code android native
+📂ios: All configuration and code ios native
+📦src
+┣ 📂assets: All assets here (jpg, png, svg etc)
+┣ 📂core: Components that are used in multiple places of the application
+┣ 📂helpers: Application helpers like sanitize, format strings and params, array methods etc.
+┃ ┣ 📂hooks: All custom hooks created to shared logic to application
+┃ ┣ 📂constants: Constants all texts and dictionaries that cannot be put into locales folder
+┃ ┣ Functions: Functions, mocks, schemas and masks
+┣ 📂routes: Routes Privates and Publics configurations
+┣ 📂screens: Containers components (responsible for handling business rules for presentations)
+┣ 📂services: Axios API services
+┣ 📂store: Redux store configurations
+┃ ┣ 📂sagas: All redux-sagas
+┃ ┣ 📂slices: All redux-slices
+┣ 📂theme: themes that are used in multiple places of the application.
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Libraries
 
-# Learn More
+- @hookform/resolvers: "3.4.2",
+- @react-native-async-storage/async-storage: "1.23.1",
+- @react-navigation/bottom-tabs: "6.5.20",
+- @react-navigation/native: "6.1.17",
+- @react-navigation/native-stack: "6.9.26",
+- axios: "1.7.2",
+- date-fns: "3.6.0",
+- lodash: "4.17.21",
+- lottie-ios: "4.4.1",
+- lottie-react-native: "6.7.2",
+- react: "18.2.0",
+- react-content-loader: "7.0.0",
+- react-hook-form: "7.51.5",
+- react-native: "0.74.1",
+- react-native-gesture-handler: "2.16.2",
+- react-native-modalize: "2.1.1",
+- react-native-reanimated: "3.11.0",
+- react-native-safe-area-context: "4.10.1",
+- react-native-screens: "3.31.1",
+- react-native-size-matters: "0.4.2",
+- react-native-status-bar-height: "2.6.0",
+- react-native-svg: "15.3.0",
+- react-native-uuid: "2.0.2",
+- styled-components: "6.1.11",
+- uuid: "9.0.1",
+- yup: "1.4.0"
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Stack
+- React Native
+- Typescript
