@@ -1,6 +1,7 @@
 <p align="center">
-  <iframe width="560" height="315" src="./simulator.mov" frameborder="0" allowfullscreen></iframe>
+  https://github.com/mariisabellaz/react-native-github-challange/assets/67912287/0de9c974-f841-4b01-b4fc-75427a811007
 </p>
+
 
 ## 👻 About Project
 
