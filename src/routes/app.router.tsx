@@ -31,8 +31,7 @@ export type AppNavigatorRoutesProps = NativeStackNavigationProp<AppRoutes>;
 export function AppRoutes() {
   return (
     <Navigator
-      screenOptions={{headerShown: false, animation: 'fade_from_bottom'}}
-      initialRouteName="login">
+      screenOptions={{headerShown: false, animation: 'fade_from_bottom'}}>
       <Screen name="splash" component={Splash} />
       <Screen
         name="intro"
