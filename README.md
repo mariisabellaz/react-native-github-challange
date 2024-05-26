@@ -1,79 +1,139 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<p align="center">
+  <img src="./simulator.gif">
+</p>
 
-# Getting Started
+## 👻 About Project
+
+The `GitHub` is a social network for programmers that features an interesting functionality allowing users to like other people's repositories. It consists of a button labeled Star found on each repository's page. Rick is an active user of `GitHub`, constantly seeking out new projects and liking those that catch his interest. He would like to be able to add a label or tag to mark a repository so that he can filter it. For example, he found a repository named `react` and would like to add the tags `javascript` and `frontend`. Since GitHub doesn't provide this functionality, Rick needs a system that can assist him with this task in a simple manner.
+
+
+The challenge consists of developing a mobile application that retrieves all the repositories that a specific user has `liked`. Once the repositories are obtained, the application creates a filter of the user's repositories by tags. The system should also have a tag suggestion mechanism based on the languages of the repositories.
+
+## 🛠 Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+### _Step 1: Start the Metro Server_
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
 To start Metro, run the following command from the _root_ of your React Native project:
 
 ```bash
-# using npm
-npm start
+# using npx
+npx react-native start --reset-cache
 
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Start your Application
+### _Step 2: Start your Application_
 
 Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+#### 🤖 _For Android_
 
 ```bash
-# using npm
-npm run android
+# install node_modules and run
 
-# OR using Yarn
-yarn android
+npm install --legacy-peer-deps && npm run android
+
 ```
 
-### For iOS
+#### 🍏 _For iOS_
 
 ```bash
-# using npm
-npm run ios
+# install node_modules
+npm install --legacy-peer-deps
 
-# OR using Yarn
+# pod
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## 💻 Project Structure
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```bash
+├── __mocks__
+├── __tests__ 
+├── src
+│   ├── @types 
+│   ├── assets
+│   │   ├── animation
+│   │   ├── fonts
+│   │   ├── fonts
+│   │   └── svg
+│   ├── components
+│   │   ├── atoms
+│   │   ├── molecules
+│   │   └── organisms
+│   ├── contexts
+│   │   ├── models
+│   │   └── context.tsx
+│   ├── hooks
+│   ├── routes
+│   ├── screens
+│   │   ├── AddUser
+│   │   ├── Intro
+│   │   ├── Login
+│   │   ├── Owners
+│   │   ├── Repositories
+│   │   └── Splash
+│   ├── services
+│   ├── theme
+│   │   ├── colors.ts
+│   │   ├── radius.ts
+│   │   ├── spacing.ts
+│   │   └── typography.ts
+│   └── utils
+│       ├── config
+│       └── tagUtils.tsx
+└── 
 
-## Step 3: Modifying your App
+📁 __mocks__: Test configurations for the libraries used.
+📁 __tests__: All tests (components, screens, context).
+📁 src: Contains all the applications source code.
+📁 @types: Global typing for the application.
+📁 assets: Static files, such as fonts and images, SVG, and animations.
+📁 components: Reusable components following the atomic design theme.
+📁 contexts: Context providers for managing global state.
+📁 hooks: Custom hooks for reusable logic.
+📁 routes: Navigation settings and logic.
+📁 screens: Screen components.
+📁 theme: Styling and theme standardization files.
+📁 services: Services for communication with APIs or other external functionalities.
+📁 utils: Utility functions and helpers.
 
-Now that you have successfully run the app, let's modify it.
+```
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## 📚 Libraries
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- [`@hookform/resolvers`](https://www.npmjs.com/package/@hookform/resolvers)
+- [`@react-native-async-storage/async-storage`](https://reactnative.dev/docs/asyncstorage)
+- [`@react-navigation/native`](https://reactnavigation.org/docs/getting-started)
+- [`axios`](https://axios-http.com/ptbr/docs/intro)
+- [`date-fns`](https://date-fns.org/)
+- [`lodash`](https://www.npmjs.com/package/lodash)
+- [`lottie-react-native`](https://github.com/lottie-react-native/lottie-react-native)
+- [`react-content-loader`](https://www.npmjs.com/package/react-content-loader)
+- [`react-hook-form`](https://react-hook-form.com/)
+- [`react-native`](https://reactnative.dev/)
+- [`react-native-gesture-handler`](https://docs.swmansion.com/react-native-gesture-handler)
+- [`react-native-modalize`](https://github.com/jeremybarbet/react-native-modalize)
+- [`react-native-reanimated`](https://docs.swmansion.com/react-native-reanimated/)
+- [`react-native-safe-area-context`](https://www.npmjs.com/package/react-native-safe-area-context)
+- [`react-native-screens`](https://github.com/software-mansion/react-native-screens)
+- [`react-native-size-matters`](https://github.com/nirsky/react-native-size-matters)
+- [`react-native-status-bar-height`](https://www.npmjs.com/package/react-native-status-bar-height)
+- [`react-native-svg`](https://github.com/software-mansion/react-native-svg)
+- [`react-native-uuid`](https://www.npmjs.com/package/react-native-uuid)
+- [`styled-components`](https://styled-components.com/)
+- [`yup`](https://github.com/jquense/yup)
 
-## Congratulations! :tada:
+## 🚧 Stack
 
-You've successfully run and modified your React Native App. :partying_face:
+- React Native
+- Typescript
 
-### Now what?
+## 📝 License
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
