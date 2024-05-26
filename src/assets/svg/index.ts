@@ -1,0 +1,16 @@
+export {default as IconUser} from './icon-user';
+export {default as IconBusiness} from './icon-business';
+export {default as IconDelete} from './icon-delete';
+export {default as IconPlace} from './icon-place';
+export {default as IconStar} from './icon-star';
+export {default as IconArrowBack} from './icon-arrow-back';
+export {default as IconArrowRight} from './icon-arrow-right';
+export {default as IconStarred} from './icon-starred';
+export {default as IconEdit} from './icon-edit';
+export {default as IconAccessTime} from './icon-access-time';
+export {default as IconLanguage} from './icon-language';
+export {default as IconSupervisorAccount} from './icon-supervisor-account';
+export {default as IconSearch} from './icon-search';
+export {default as IconFilter} from './icon-filter';
+export {default as IconButtonPlus} from './icon-button-plus';
+export {default as IconButtonClose} from './icon-button-close';
